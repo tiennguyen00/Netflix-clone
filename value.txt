@@ -1,0 +1,4 @@
+1. marco trong styled-components/marco giúp thay đổi tên của class thành tên của component cho tiện theo dói/
+ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="jumbotron_Pane-sc-81smov-3 iaWdzb"
+2. import styled from ''styled-components/marco; và có thể sử dụng như const Content = styled.div`....` / 
+3. 

@@ -2,7 +2,7 @@ Mô hình: index.js -> app.js -> containers -> components(name component) -> com
 Một số thuộc tính CSS:
 filter: brightness(0) invert(1)
 box-sizing: border-box
-flex-basis
+flex-basis: ...
 
 1. marco trong styled-components/marco giúp thay đổi tên của class thành tên của component cho tiện theo dói /
 ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="jumbotron_Contaniner-sc-81smov-3 iaWdzb"
@@ -13,4 +13,7 @@ ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="
     const MyContext = React.createContext(defaultValue);
     <MyContext.Provider value={/* some value */}>;
     ...
-4.
+4. react-route-dom, react-route-native (for mobile)
+Cu phap import { Link as ReactRouterLink } from 'react-router-dom'?
+export const ButtonLink = styled(ReactRouterLink)?
+

@@ -1,8 +1,8 @@
 Mô hình: index.js -> app.js -> containers -> components(name component) -> components(styles)
 Một số thuộc tính CSS:
 filter: brightness(0) invert(1)
-box-sizing: border-box
-flex-basis: ...
+box-sizing: border-box //Defines how the width and height of an element are calculated: should they include padding and borders, or not.
+flex-basis: ... Khi để flex-basis là 1000px, trình duyệt sẽ hiểu là "hãy cố gắng dành ra 1 khoảng trống 1000px cho phần tử đó". Nếu điều đó là không thể, thì phần tử đó cũng sẽ chiếm nhiều không gian theo tỉ lệ với các phần tử khác.
 
 1. marco trong styled-components/marco giúp thay đổi tên của class thành tên của component cho tiện theo dói /
 ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="jumbotron_Contaniner-sc-81smov-3 iaWdzb"
@@ -15,5 +15,9 @@ ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="
     ...
 4. react-route-dom, react-route-native (for mobile)
 Cu phap import { Link as ReactRouterLink } from 'react-router-dom'?
-export const ButtonLink = styled(ReactRouterLink)?
+export const ButtonLink = styled(ReactRouterLink)??
 
+5. React Context for Firebase? (API with Firebase Authentication)
+- Provides the ability to pass props to child components without needing to pass them down manually. /
+Ex: I can use for authentication user and I donot have to manually pass the authenticated user props to every child component.
+Link: https://lo-victoria.com/introduction-to-react-context-api-with-firebase-authentication

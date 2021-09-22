@@ -15,7 +15,7 @@ ví dụ: <Jumbotron.Contaniner/> sẽ là thẻ div (tùy theo) và có class="
     ...
 4. react-route-dom, react-route-native (for mobile)
 Cu phap import { Link as ReactRouterLink } from 'react-router-dom'?
-export const ButtonLink = styled(ReactRouterLink)??
+export const ButtonLink = styled(ReactRouterLink)?? -> Style cho Link(RouterLink)
 
 5. React Context for Firebase? (API with Firebase Authentication)
 - Provides the ability to pass props to child components without needing to pass them down manually. /

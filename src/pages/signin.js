@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
+import { FirebaseContext } from '../context/firebase';
 import { FooterContainer } from '../containers/footer';
 import HeaderContainer from '../containers/header';
 import { Form } from '../components';
-import { enableMultiTabIndexedDbPersistence } from '@firebase/firestore';
+import * as ROUTES from '../constants/routes';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 export default function Signip() {
+  const history = useHistory();
+  const auth = getAuth();
+  const { firebaseApp } = useContext(FirebaseContext); //From FireBaseContext.Provider
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -14,6 +20,17 @@ export default function Signip() {
   const handleSignIn = (event) => {
     event.preventDefault();
     // Firebase work here
+    signInWithEmailAndPassword(auth, emailAddress, password)
+      .then((userCredential) => {
+        console.log(userCredential);
+        // push to the browse page
+        history.push(ROUTES.BROWSE);
+      })
+      .catch((error) => {
+        setEmailAddress('');
+        setPassword('');
+        setError(error.message);
+      });
   };
 
   return (

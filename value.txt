@@ -21,3 +21,7 @@ export const ButtonLink = styled(ReactRouterLink)?? -> Style cho Link(RouterLink
 - Provides the ability to pass props to child components without needing to pass them down manually. /
 Ex: I can use for authentication user and I donot have to manually pass the authenticated user props to every child component.
 Link: https://lo-victoria.com/introduction-to-react-context-api-with-firebase-authentication
+6. IsUserRedirect và ProtectRoute (from './helpers/routes')
+IsUserRedirect: If user is null then redirect to SignIn, SignUp. If user is not null then redirect to Browse
+ProtectRoute??/
+7. onAuthStateChanged (firebase): Get the currently signed-in user

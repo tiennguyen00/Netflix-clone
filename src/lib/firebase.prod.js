@@ -18,4 +18,4 @@ const db = getFirestore();
 // Insert data only for first time
 // seedDatabase(db);
 
-export { firebaseApp };
+export { firebaseApp, db };

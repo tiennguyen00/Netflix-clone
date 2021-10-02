@@ -8,7 +8,7 @@ export default function Browse() {
   const { series } = useContent('series');
   const { films } = useContent('films');
   // we need slides
-  const slides = selectionFilter({ series, films });
+  const slides = selectionFilter({ series, films }); //Two array are series and films
   // pass it to the browse container
 
   return <BrowseContainer slides={slides} />;

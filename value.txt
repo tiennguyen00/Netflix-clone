@@ -25,4 +25,5 @@ Link: https://lo-victoria.com/introduction-to-react-context-api-with-firebase-au
 IsUserRedirect: If user is null then redirect to SignIn, SignUp. If user is not null then redirect to Browse
 ProtectRoute??/
 7. onAuthStateChanged (firebase): Get the currently signed-in user
-8. Browse page: Còn một bug là khi để qua 3s (trang browse) ko chọn thì nó sẽ ko hiện loadding khi bấm
+8. Browse page: Còn một bug là khi để qua 3s (trang browse) ko chọn thì nó sẽ ko hiện loadding khi bấm?
+Hover vào header__Profile thì sẽ hiện ra menu Signout
